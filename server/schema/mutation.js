@@ -5,7 +5,15 @@ const UserType = require("./types/user_type");
 
 const mutation = new GraphQLObjectType({
   name: "Mutation",
-  fields: {},
+  fields: {
+    signup: {
+      type: UserType,
+      args: {
+        email: { type: GraphQLString },
+        password: { type: GraphQLString },
+      },
+    },
+  },
 });
 
 module.export = mutation;
