@@ -12,6 +12,7 @@ const mutation = new GraphQLObjectType({
         email: { type: GraphQLString },
         password: { type: GraphQLString },
       },
+      resolve(parentValue, args, context) {},
     },
   },
 });
