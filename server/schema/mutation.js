@@ -1,5 +1,4 @@
 const graphql = require("graphql");
-const { module } = require("../../webpack.config");
 const { GraphQLObjectType, GraphQLString } = graphql;
 const UserType = require("./types/user_type");
 const AuthService = require("../services/auth");
@@ -20,4 +19,4 @@ const mutation = new GraphQLObjectType({
   },
 });
 
-module.export = mutation;
+module.exports = mutation;
